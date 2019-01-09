@@ -247,6 +247,11 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
+# Framework detect
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect \
+    libvndfwk_detect_jni.qti
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
