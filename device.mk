@@ -344,11 +344,11 @@ PRODUCT_PACKAGES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    telephony-ext
+    telephony-ext \
     ims-ext-common_system
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext
+    telephony-ext \
     ims-ext-common_system
 
 # Offline charger
