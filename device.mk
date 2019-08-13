@@ -30,12 +30,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 # Bluetooth
 PRODUCT_PACKAGES += \
-   BluetoothQti \
-   libldacBT_dec \
-   com.qualcomm.qti.bluetooth_audio@1.0 \
-   android.hardware.bluetooth.a2dp@1.0-impl \
-   android.hardware.bluetooth.a2dp@1.0-service \
-   vendor.qti.hardware.btconfigstore@1.0.vendor
+    libldacBT_dec \
+    BluetoothResCommon
 
 # Camera
 PRODUCT_PACKAGES += \

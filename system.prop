@@ -102,7 +102,10 @@ persist.timed.enable=true
 #system prop for Bluetooth SOC type
 ro.bluetooth.library_name=libbluetooth_qti.so
 persist.vendor.btstack.enable.splita2dp=false
-
+bluetooth.hfp.client=1
+qcom.bluetooth.soc=smd 
+ro.bluetooth.hfp.ver=1.7
+ro.qualcomm.bt.hci_transport=smd
 # ifdef ODM_WT_EDIT
 # System property for cabl
 # Minglin.Wang@ODM_WT.MM.Display.Lcd.1372106, 2019/01/03,  Modify for disable cabl use cabc
