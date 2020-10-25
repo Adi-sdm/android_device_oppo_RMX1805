@@ -62,6 +62,12 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 28
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
+# System-as-root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
+# Sepolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
