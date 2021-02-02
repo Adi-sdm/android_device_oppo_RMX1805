@@ -40,3 +40,6 @@
 #Runsheng.Pei@PSW.AD.Storage.ReservePartition.1207580, 2017/12/29, Add for new reserve partition
 /dev/block/bootdevice/by-name/opporeserve2      /mnt/vendor/opporeserve             ext4   nosuid,nodev,noatime,barrier=1,async_discard                           wait,check
 #endif
+/dev/block/bootdevice/by-name/boot                      /boot                    emmc    defaults                                             defaults
+/dev/block/bootdevice/by-name/vendor                    /vendor                  ext4    ro,barrier=1                                         wait,recoveryonly
+/dev/block/bootdevice/by-name/recovery                  /recovery                emmc    defaults                                             defaults
