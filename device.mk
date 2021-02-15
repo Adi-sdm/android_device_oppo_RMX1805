@@ -248,6 +248,10 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit vendor
+# Trust
+PRODUCT_PACKAGES += \
+    lineage.trust@1.0-service
+
 # CNE
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
