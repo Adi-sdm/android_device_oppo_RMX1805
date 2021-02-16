@@ -1,5 +1,4 @@
 LOCAL_PATH := $(call my-dir)
-<<<<<<< HEAD
 include $(CLEAR_VARS)
 
 include $(CLEAR_VARS)
@@ -97,15 +96,12 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/fstab-wlan.qcom
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)
 include $(BUILD_PREBUILT)
-=======
->>>>>>> 0f47117 (RMX1805: Build and bind mount fstab)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE       := fstab.qcom
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/fstab.qcom
-<<<<<<< HEAD
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)
 include $(BUILD_PREBUILT)
 
@@ -116,17 +112,7 @@ LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/ueventd.qcom.rc
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)
-=======
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE       := init.qcom.rc
-LOCAL_MODULE_TAGS  := optional
-LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := etc/init.qcom.rc
-LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/init
->>>>>>> 0f47117 (RMX1805: Build and bind mount fstab)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)

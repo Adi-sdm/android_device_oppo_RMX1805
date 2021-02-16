@@ -1284,7 +1284,6 @@ on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,diag_mdm,q
     write /config/usb_gadget/g1/UDC ${sys.usb.controller}
     setprop sys.usb.state rndis,adb
 
-<<<<<<< HEAD
 # #ifndef ODM_WT_EDIT
 # Zhaopeng.Guo@ODM_RH.BSP.Storage.USB.1372106, 2019/03/12, Modify for config usb PID&VID
 #on property:sys.usb.config=adb && property:sys.usb.configfs=1

@@ -386,8 +386,6 @@ on property:init.svc.zygote=restarting
 #    socket vqtss stream 0660 system system
 #    user system
 #    group system
->>>>>>> c96dc5c... [All][MM.Display.SF.Feature][1/1][BugId:无][无风险][无依赖][自然集成]{同步 591082，修改首次开机之后，AD不生效}
-
 #endif/*VENDOR_EDIT*/
 
 
@@ -402,7 +400,7 @@ on boot
 on charger
     wait /dev/block/bootdevice/by-name/system
     mount ext4 /dev/block/bootdevice/by-name/system /system ro barrier=1
-    load_all_props
+#    load_all_props
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
     setprop persist.sys.usb.config mass_storage
