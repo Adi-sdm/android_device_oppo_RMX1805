@@ -8,7 +8,9 @@ TARGET_OTA_ASSERT_DEVICE := RMX1805,RMX1811,RMX1809
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.a2dp.default
+    audio.a2dp.default \
+    android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio@4.0-impl
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -26,6 +28,17 @@ TARGET_SCREEN_WIDTH := 720
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+# Bluetooth
+PRODUCT_PACKAGES += \
+   BluetoothQti \
+   com.qualcomm.qti.bluetooth_audio@1.0 \
+   android.hardware.bluetooth.a2dp@1.0-impl \
+   android.hardware.bluetooth.a2dp@1.0-service \
+   vendor.qti.hardware.btconfigstore@1.0.vendor
+
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \

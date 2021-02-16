@@ -828,4 +828,13 @@ h<manifest version="1.0" type="device" target-level="3">
     <sepolicy>
         <version>28.0</version>
     </sepolicy>
+    <hal format="hidl"> 
+        <name>android.hardware.bluetooth.a2dp</name> 
+        <transport>hwbinder</transport> 
+        <version>1.0</version> <interface>
+            <name>IBluetoothAudioOffload</name> 
+            <instance>default</instance>
+        </interface> 
+        <fqname>@1.0::IBluetoothAudioOffload/default</fqname>
+    </hal>
 </manifest>
