@@ -49,6 +49,10 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2020-11-05
+
+# System-as-root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
