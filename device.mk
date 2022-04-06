@@ -1,3 +1,10 @@
+#
+# Copyright (C) 2020 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+# Asserts
+TARGET_OTA_ASSERT_DEVICE := RMX1805,RMX1811,RMX1809
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
