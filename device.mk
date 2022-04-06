@@ -21,6 +21,19 @@ TARGET_SCREEN_WIDTH := 720
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+# Display
+PRODUCT_PACKAGES += \
+    libdisplayconfig \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.graphics.mapper@2.0-impl \
+    gralloc.default \
+    libdisplayconfig \
+    liboverlay \
+    libqdMetaData.system \
+    libtinyxml
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
