@@ -54,6 +54,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 
+# Display
+TARGET_SCREEN_DENSITY := 385
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2020-11-05
 
